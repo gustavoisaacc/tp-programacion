@@ -1,0 +1,18 @@
+{
+  "carreras": [
+    {
+      "id": 1, 
+      "name": "Tecnicatura universitaria en Programacion",
+      "Alumnoid": 1,
+      "materiaId": 1
+    }
+  ],
+  "alumno":[
+    {"id": 1, "name": "juan", "lastName": "juarez", "dni": 32091905}
+  ],
+  "materias": [
+    {"id": 1, "name": "Programacion I", "Notas": 5}
+  ]
+  
+  
+}
