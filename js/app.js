@@ -5,7 +5,7 @@
     for (let i=0; i<carreras.data.length; i++){
         cadena += `<option value=${carreras.data[i].id}>${carreras.data[i].nombCarrera}</option>`
     }
-    document.getElementById("car").innerHTML=cadena
+    console.log(cadena)
 })()
 
 async function mostrarMaterias(){

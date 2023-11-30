@@ -80,3 +80,7 @@ a{
     align-items: center;
   }
 }
+
+.modals{
+  display: none;
+}

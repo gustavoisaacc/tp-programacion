@@ -1,32 +1,50 @@
 {
   "carreras": [
-    {
-      "id": 1, 
-      "name": "--Seleccione una Carrera--"
-    },
-    {
-      "id": 2, 
-      "name": "Tecnicatura universitaria en Programacion"
-    },
-    {
-      "id": 3, 
-      "name": "Tecnicatura universitaria en Mecatronica"
-    },
-    {
-      "id": 4, 
-      "name": "Tecnicatura universitaria en Higiene y seguridad"
-    }
-  ],
-  "alumno":[
-    {"id": 1, "name": "juan", "lastName": "juarez", "dni": 32091905}
+      {"id":1, "nombCarrera": "tecnicatura universitaria en programacion", "director": "Ing. Claudio Fernandez"},
+      {"id":2, "nombCarrera": "tecnicatura universitaria en mecatronica", "director": "Ing. Ramon Oris" }
   ],
   "materias": [
-    {"id": 1, "name": "Programacion I", "carrerasId": 2},
-    {"id": 2, "name": "Mecatronica", "carrerasId": 3}
-
+      {"id":1, "carreraId": 1, "nombMateria": "ESTADÍSTICA", "Cuatrimestre": 1, "año": 1},
+      {"id":2, "carreraId": 1,"nombMateria": "PROGRAMACION II", "Cuatrimestre": 2, "año": 1},
+      {"id":3, "carreraId": 1,"nombMateria": "LABORATORIO DE COMPUTACIÓN II", "Cuatrimestre": 2, "año": 1},
+      {"id":4, "carreraId": 1,"nombMateria": "METODOLOGÍA DE LA INVESTIGACIÓN", "Cuatrimestre": 2, "año": 1},
+      {"id":5, "carreraId": 1,"nombMateria": "INGLÉS II", "Cuatrimestre": 2, "año": 1},
+      {"id":6, "carreraId": 1, "nombMateria": "INGLÉS I", "Cuatrimestre": 1, "año": 1},
+      {"id":7, "carreraId": 1, "nombMateria": "ARQUITECTURA Y SISTEMAS", "Cuatrimestre": 2, "año": 1},
+      {"id":8, "carreraId": 1, "nombMateria": "PROGRAMACIÓN I", "Cuatrimestre": 1, "año": 1},
+      {"id":9, "carreraId": 1, "nombMateria": "LABORATORIO I", "Cuatrimestre": 1, "año": 1},
+      {"id":10, "carreraId": 1, "nombMateria": "ORGANIZACIÓN EMPRESARIAL", "Cuatrimestre": 1, "año": 2},
+      {"id":11, "carreraId": 1, "nombMateria": "MATEMATICA", "Cuatrimestre": 1, "año": 1},
+      {"id":12, "carreraId": 1, "nombMateria": "SISTEMA DE PROCESAMIENTO DE DATOS", "Cuatrimestre": 1, "año": 1},
+      {"id":13, "carreraId": 1, "nombMateria": "METODOLOGIA DE SISTEMAS I", "Cuatrimestre": 2, "año": 2},
+      {"id":14, "carreraId": 1, "nombMateria": "EGISLACIÓN", "Cuatrimestre": 2, "año": 2},
+      {"id":15, "carreraId": 1, "nombMateria": "DISEÑO Y ADMINISTRACIÓN DE BASES DE DATOS", "Cuatrimestre": 2, "año": 2},
+      {"id":16, "carreraId": 1, "nombMateria": "LABORATORIO IV", "Cuatrimestre": 2, "año": 2},
+      {"id":17, "carreraId": 1, "nombMateria": "PROGRAMACIÓN III", "Cuatrimestre": 2, "año": 2},
+      {"id":18, "carreraId": 1, "nombMateria": "LABORATORIO DE COMPUTACION III", "Cuatrimestre": 2, "año": 2},
+      {"id":19, "carreraId": 1, "nombMateria": "ELEMENTOS DE INVESTIGACIÓN OPERATIVA", "Cuatrimestre": 2, "año": 2},
+      {"id":20, "carreraId": 1, "nombMateria": "ORGANIZACIÓN CONTABLE DE LA EMPRESA", "Cuatrimestre": 2, "año": 2},
+      {"id":21, "carreraId": 2, "nombMateria": "ELECTROTECNIA I", "Cuatrimestre": 2, "año": 1},
+      {"id":22, "carreraId": 2, "nombMateria": "MATERIALES", "Cuatrimestre": 2, "año": 1},
+      {"id":23, "carreraId": 2, "nombMateria": "SISTEMAS DE REPRESENTACIÓN", "Cuatrimestre": 2, "año": 1},
+      {"id":24, "carreraId": 2, "nombMateria": "INGLÉS", "Cuatrimestre": 2, "año": 1},
+      {"id":25, "carreraId": 2, "nombMateria": "MATEMÁTICA", "Cuatrimestre": 2, "año": 1},
+      {"id":26, "carreraId": 2, "nombMateria": "FÍSICA", "Cuatrimestre": 2, "año": 1},
+      {"id":27, "carreraId": 2, "nombMateria": "MECATRÓNICA I", "Cuatrimestre": 2, "año": 1},
+      {"id":28, "carreraId": 2, "nombMateria": "HERRAMIENTAS INFORMÁTICAS", "Cuatrimestre": 2, "año": 1},
+      {"id":29, "carreraId": 2, "nombMateria": "GESTIÓN DE LA CALIDAD Y METROLOGÍA", "Cuatrimestre": 2, "año": 2},
+      {"id":30, "carreraId": 2, "nombMateria": "AUTOMACIÓN INDUSTRIAL", "Cuatrimestre": 2, "año": 2},
+      {"id":31, "carreraId": 2, "nombMateria": "MECÁNICA II", "Cuatrimestre": 2, "año": 2},
+      {"id":32, "carreraId": 2, "nombMateria": "ELECTROTECNIA II", "Cuatrimestre": 2, "año": 2},
+      {"id":33, "carreraId": 2, "nombMateria": "ELECTRÓNICA", "Cuatrimestre": 2, "año": 2},
+      {"id":34, "carreraId": 2, "nombMateria": "MANTENIMIENTO INDUSTRIAL", "Cuatrimestre": 2, "año": 2},
+      {"id":35, "carreraId": 2, "nombMateria": "MECÁNICA I", "Cuatrimestre": 2, "año": 2},
+      {"id":36, "carreraId": 2, "nombMateria": "MECATRÓNICA II", "Cuatrimestre": 2, "año": 2}
   ],
-  "profesor": [
-    {"id": 1, "name": "peppito", "lastName": "peper"}
-  ]  
-  
+  "alumnos": [
+    {"id":1, "MateriaId": 1, "nombre": "Gustavo", "apellido": "Chaile", "año": 1},
+    {"id":2, "MateriaId": 1, "nombre": "Gustavo", "apellido": "centeno", "año": 1},
+    {"id":3, "MateriaId": 1, "nombre": "Gustavo", "apellido": "araoz", "año": 1}
+  ]
 }
+
