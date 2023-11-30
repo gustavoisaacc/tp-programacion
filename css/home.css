@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  
+}
+
+.reguistros option{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#alumno{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reguistros select{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: crimson;
+  text-align: center;
+  width: 362px;
+  height: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 5px;
+}
+
+.buscar{
+  display: flex;
+  place-content: center;
+}
+
+input{
+  width: 360px;
+  height: 30px;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn button {
+  width: 125px;
+  height: 25px;
+  background-color: crimson;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#alumno label{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-right: 5px;
+}

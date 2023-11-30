@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <title>Agenda de materias</title>
+</head>
+<body>
+  <header class="header"> 
+    <h1>Agenda</h1>
+    <nav class="menu">
+      <ul class="menu--container">
+        <li class="menu--link"><a href="/">inicio</a></li>
+        <li class="menu--link"><a href="./carga-datos/cargaAlumno.html">Cargar Alumno</a></li>
+        <li class="menu--link"><a href="./carga-datos/cargaProfesor.html">Carga Profeso</a></li>
+        <li class="menu--link"><a href="./carga-datos/cargaMateria.html">Carga Materia</a></li>
+      </ul>
+      <button class="menu--phone" id="menu--phone">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </nav>
+  </header>
+  <div class="conatier">
+
+    <form id="alumno">
+      <label for="nombre">Nombre</label>
+      <input type="text" placeholder="ingrese su nombre" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" placeholder="ingrese su apellido" required>
+
+      <label for="documento">D.N.I</label>
+      <input type="number" placeholder="ingrese su D.NI" required>
+
+      <main class="reguistros">
+        <select name="" id="">
+          <option value="">SELECCIONE UNA CARRERA</option>
+          <option value="">Programacion</option>
+          <option value="">Mecatronica</option>
+          <option value="">Higuiene y Seguridad</option>
+        </select>
+      </main>
+      <div class="btn">
+        <button type="submit">Agregar</button>
+        <button type="submit">Cancelar</button>
+      </div>
+
+      <div>
+        <section class="tabla--informacion"></section>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+</html>
