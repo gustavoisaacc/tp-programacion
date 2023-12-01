@@ -3,6 +3,7 @@ const reguistro = document.querySelector(".reguistros");
 const table = document.querySelector('.tabla-informacion');
 const alumnosModal = document.querySelector('#mi-modal');
 const body = document.querySelector('.modal-body');
+const titleModal = document.querySelector('h5');
 
 
 
@@ -41,6 +42,7 @@ reguistro.addEventListener('change', async (e) => {
 const menu  = document.querySelector(".menu--container");
 
 table.addEventListener('click',async (e) => {
+  body.innerHTML = ""
   if(e.target.id === "title"){
     const target = e.target
     const id = target.dataset.set
@@ -50,17 +52,22 @@ table.addEventListener('click',async (e) => {
     console.log(alumnos.data)
     alumnosModal.classList.toggle('modals')
     const p = document.createElement('div')
+    titleModal.innerHTML = e.target.innerHTML
     alumnos.data.forEach(item => {
       p.innerHTML += `
         <p>${item.nombre}</p>
       `
       body.appendChild(p)
+     
     })
-
   }
 })
 
-
+alumnosModal.addEventListener('click', (e)=> {
+  if(e.target.className === "btn-close"){
+    alumnosModal.classList.add('modals')
+  }
+})
 
 
 
