@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -72,4 +74,13 @@ input{
 .width{
   width: 95%;
   margin: 0 auto;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+h1 a{
+  text-decoration: none;
+  color: black;
 }

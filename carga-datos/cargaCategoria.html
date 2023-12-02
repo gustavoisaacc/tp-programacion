@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/home.css">
-  <link rel="stylesheet" href="/css/menu.css">
-  <title>Agenda de materias</title>
+  <link rel="stylesheet" href="../css//home.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <title>Agenda de Productos</title>
 </head>
 <body>
   <header class="header"> 
-    <h1>Agenda</h1>
+    <h1>AIFOS</h1>
     <nav class="menu">
       <ul class="menu--container">
         <li class="menu--link"><a href="/">inicio</a></li>
-        <li class="menu--link"><a href="./carga-datos/cargaAlumno.html">Cargar Alumno</a></li>
-        <li class="menu--link"><a href="./carga-datos/cargaProfesor.html">Carga Profeso</a></li>
-        <li class="menu--link"><a href="./carga-datos/cargaMateria.html">Carga Materia</a></li>
+        <li class="menu--link"><a href="cargaProducto.html">Carga Producto</a></li>
       </ul>
       <button class="menu--phone" id="menu--phone">
         <div></div>
@@ -29,6 +27,12 @@
     <form id="alumno">
       <label for="nombre">Nombre</label>
       <input type="text" placeholder="ingrese su nombre" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" placeholder="ingrese su apellido" required>
+
+      <label for="documento">D.N.I</label>
+      <input type="number" placeholder="ingrese su D.NI" required>
 
       <main class="reguistros">
         <select name="" id="">
@@ -49,5 +53,7 @@
     </form>
   </div>
 </body>
-<script src="./js/menu.js"></script>
+<script src="../js/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="../js/main.js"></script>
 </html>
