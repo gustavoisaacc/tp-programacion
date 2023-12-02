@@ -68,3 +68,8 @@ input{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
 }
+
+.width{
+  width: 95%;
+  margin: 0 auto;
+}

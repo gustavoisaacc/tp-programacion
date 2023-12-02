@@ -57,9 +57,10 @@ table.addEventListener('click',async (e) => {
     producto.data.forEach(item => {
       div.innerHTML += `
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="${item.imagen}" alt="imagen del producto" loading="lazy" style="opacity: 1;">
         <div class="card-body">
-          <h5 class="card-title">${item.nombre} <span>$${item.precio}</span> </h5>
+          <h5 class="card-title">${item.nombre}</h5>
+          <h5 class="card-title">$${item.precio}</h5>
           <a href="#" class="btn btn-primary">ver</a>
         </div>
       </div>
