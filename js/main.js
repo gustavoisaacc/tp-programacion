@@ -19,59 +19,63 @@ const API = "http://localhost:3000/categorias";
     select.innerHTML += `
     <option value="${item.id}">${item.categoria}</option>
     `
-    reguistro.appendChild(select)
+    reguistro?.appendChild(select)
   })
 })()
 
-reguistro.addEventListener('change', async (e) => {
-  table.innerHTML = '';
-  if(e.target.className === "carreras"){
-    const div = document.createElement('div')
-    const sele = e.target;
-    const API = `http://localhost:3000/categorias/${sele.value}/tipo`;
-    const materias = await axios.get(API)
-    materias.data.forEach(item => {
-      div.innerHTML += `
-      <p data-set=${item.id} id="title" >${item.subCategorias}</p>
-    `
-    table.appendChild(div)
+if(reguistro){
+  reguistro.addEventListener('change', async (e) => {
+    table.innerHTML = '';
+    if(e.target.className === "carreras"){
+      const div = document.createElement('div')
+      const sele = e.target;
+      const API = `http://localhost:3000/categorias/${sele.value}/tipo`;
+      const materias = await axios.get(API)
+      materias.data.forEach(item => {
+        div.innerHTML += `
+        <p data-set=${item.id} id="title" >${item.subCategorias}</p>
+      `
+      table.appendChild(div)
+    })
+   
+   }
   })
- 
- }
-})
+}
 const menu  = document.querySelector(".menu--container");
 
-table.addEventListener('click',async (e) => {
-  body.innerHTML = ""
-  if(e.target.id === "title"){
-    const target = e.target
-    const id = target.dataset.set
-    console.log(id)
-    const API = `http://localhost:3000/tipo/${id}/producto`;
-    const producto = await axios.get(API)
-    console.log(producto.data)
-    productoModal.classList.toggle('modals')
-    const div = document.createElement('div')
-    div.classList.add('card--css')
-    titleModal.innerHTML = e.target.innerHTML
-    producto.data.forEach(item => {
-      div.innerHTML += `
-      <div class="card">
-        <img src="${item.imagen}" alt="imagen del producto" loading="lazy" style="opacity: 1;">
-        <div class="card-body">
-          <h5 class="card-title">${item.nombre}</h5>
-          <h5 class="card-title">$${item.precio}</h5>
-          <a href="#" class="btn btn-primary">ver</a>
+if(table){
+  table.addEventListener('click',async (e) => {
+    body.innerHTML = ""
+    if(e.target.id === "title"){
+      const target = e.target
+      const id = target.dataset.set
+      console.log(id)
+      const API = `http://localhost:3000/tipo/${id}/producto`;
+      const producto = await axios.get(API)
+      console.log(producto.data)
+      productoModal.classList.toggle('modals')
+      const div = document.createElement('div')
+      div.classList.add('card--css')
+      titleModal.innerHTML = e.target.innerHTML
+      producto.data.forEach(item => {
+        div.innerHTML += `
+        <div class="card">
+          <img src="${item.imagen}" alt="imagen del producto" loading="lazy" style="opacity: 1;">
+          <div class="card-body">
+            <h5 class="card-title">${item.nombre}</h5>
+            <h5 class="card-title">$${item.precio}</h5>
+            <a href="#" class="btn btn-primary">ver</a>
+          </div>
         </div>
-      </div>
-      `
-      body.appendChild(div)
-     
-    })
-  }
-})
+        `
+        body.appendChild(div)
+       
+      })
+    }
+  })
+}
 
-productoModal.addEventListener('click', (e)=> {
+productoModal?.addEventListener('click', (e)=> {
   if(e.target.className === "btn-close"){
     productoModal.classList.add('modals')
   }

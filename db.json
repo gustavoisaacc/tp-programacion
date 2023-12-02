@@ -1,58 +1,317 @@
 {
   "categorias": [
-      {"id":1, "categoria": "Tecnologia"},
-      {"id":2, "categoria": "Electrodomesticos"},
-      {"id":3, "categoria": "Hogar"}
+    {
+      "id": 1,
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 2,
+      "categoria": "Electrodomesticos"
+    },
+    {
+      "id": 3,
+      "categoria": "Hogar"
+    }
   ],
   "tipo": [
-      {"id":1, "categoriaId": 1, "subCategorias": "Computadiras"},
-      {"id":2, "categoriaId": 1,"subCategorias": "Impresoras"},
-      {"id":3, "categoriaId": 1,"subCategorias": "Celulares"},
-      {"id":4, "categoriaId": 2,"subCategorias": "Climatizacion"},
-      {"id":5, "categoriaId": 2,"subCategorias": "Heladeras y Frezzers"},
-      {"id":6, "categoriaId": 2, "subCategorias": "Cocinas y Hornos"},
-      {"id":7, "categoriaId": 3, "subCategorias": "Colchones y Sommiers"},
-      {"id":8, "categoriaId": 3, "subCategorias": "Muebles"},
-      {"id":9, "categoriaId": 3, "subCategorias": "Jardín"}
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "subCategorias": "Computadiras"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "subCategorias": "Impresoras"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "subCategorias": "Celulares"
+    },
+    {
+      "id": 4,
+      "categoriaId": 2,
+      "subCategorias": "Climatizacion"
+    },
+    {
+      "id": 5,
+      "categoriaId": 2,
+      "subCategorias": "Heladeras y Frezzers"
+    },
+    {
+      "id": 6,
+      "categoriaId": 2,
+      "subCategorias": "Cocinas y Hornos"
+    },
+    {
+      "id": 7,
+      "categoriaId": 3,
+      "subCategorias": "Colchones y Sommiers"
+    },
+    {
+      "id": 8,
+      "categoriaId": 3,
+      "subCategorias": "Muebles"
+    },
+    {
+      "id": 9,
+      "categoriaId": 3,
+      "subCategorias": "Jardín"
+    }
   ],
   "producto": [
-    {"id":1, "tipoId": 1, "nombre": "Notebook ASUS Vivobook 15 15,6 Intel Core i3 8GB 256GB SSD X1502ZA-EJ830W", "precio": 659.999, "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"},
-    {"id":2, "tipoId": 1,"nombre": "Notebook HP 15.6” Ryzen 5 8GB 256GB SSD 15-ef2513la", "precio": 919.999, "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"},
-    {"id":3, "tipoId": 1,"nombre": "Notebook Lenovo 14” Core i3 8GB 256GB SSD IdeaPad Slim 3 82XA001KAR", "precio": 639.999, "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"},
-    {"id":4, "tipoId": 1,"nombre": "Notebook ASUS Vivobook 15 Core i7 8GB 512GB Win11 X1502ZA-EJ192W", "precio": 1.519999, "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"},
-    {"id":5, "tipoId": 2,"nombre": "Impresora Multifunción HP Smart Tank 520", "precio": 248.900, "imagen": "https://images.fravega.com/f300/55186970bdffda258a06a77aa35c7c1b.png"},
-    {"id":6, "tipoId": 2, "nombre": "Impresora Multifunción Canon Pixma G2110", "precio": 314.500, "imagen": "https://images.fravega.com/f300/ebd9f9324274f155b2d096ea363669d9.jpg"},
-    {"id":7, "tipoId": 2, "nombre": "Impresora Multifuncional HP DeskJet Ink Advantage 2375 (7WQ01A)", "precio": 84.999, "imagen": "https://images.fravega.com/f300/d47f1de026eeb3114b96c7a4e5766750.png"},
-    {"id":8, "tipoId": 2, "nombre": "Impresora Multifunción Epson Monocromatica Ecotank M2120 ", "precio": 787.500, "imagen": "https://images.fravega.com/f300/bb2c3cc8269486538fa2840ed7be5232.jpg"},
-    {"id":9, "tipoId": 3, "nombre": "Celular Samsung Galaxy A34 5G 128GB Lime", "precio": 299.999, "imagen": "https://images.fravega.com/f300/db44679678dd33b987212bc9e6fc2c99.jpg"},
-    {"id":10, "tipoId": 3, "nombre": "Celular Motorola G23 128GB Azul", "precio": 179.999, "imagen": "https://images.fravega.com/f300/332a2d22382f714d26253b62446af895.png"},
-    {"id":11, "tipoId": 3, "nombre": "Celular Motorola G13 4GB 128GB Rosa", "precio": 149.500, "imagen": "https://images.fravega.com/f300/4eed773a4b3c5f985eb5ca1c44c477e9.png"},
-    {"id":12, "tipoId": 3, "nombre": "Celular Xiaomi Redmi Note 11 128GB Negro", "precio": 162.399, "imagen": "https://images.fravega.com/f300/9f8f8e501e260db6c994a891542fa349.jpg"},
-    {"id":13, "tipoId": 3, "nombre": "Celular Xiaomi Redmi Note 11 128GB Azul", "precio": 162.399, "imagen": "https://images.fravega.com/f300/4c525119070000729d3fd4e98301c4a8.png"},
-    {"id":14, "tipoId": 4, "nombre": "Ventilador de Pie Peabody PE-VP2061", "precio": 47.990, "imagen": 2},
-    {"id":15, "tipoId": 4, "nombre": "Aire Acondicionado Split Frío/Calor Carrier XPower Inverter 3450W 2900F 53HVG1201E", "precio": 799.500, "imagen": 2},
-    {"id":16, "tipoId": 4, "nombre": "Climatizador Portátil Philco 94CP1819N", "precio": 99.999, "imagen": 2},
-    {"id":17, "tipoId": 4, "nombre": "Turbo Ventilador Liliana VTF16P 16", "precio": 30.500, "imagen": 2},
-    {"id":18, "tipoId": 4, "nombre": "Aire Acondicionado Inverter Split Frío/Calor Hyundai HY10INV 3200W 2700F", "precio": 719.999, "año": 2},
-    {"id":19, "tipoId": 5, "nombre": "Heladera Cíclica Drean 277Lts HDR280F00B Blanco", "precio": 464.099, "imagen": 2},
-    {"id":20, "tipoId": 5, "nombre": "Freezer Gafa Inverter  FGHI200B-M 205L Blanco ", "precio": 350.999, "imagen": 2},
-    {"id":21, "tipoId": 5, "nombre": "Heladera Cíclica Drean HDR400F00S 397 Lt Gris", "precio": 599.900, "imagen": 1},
-    {"id":22, "tipoId": 5, "nombre": "Heladera Cíclica Drean HDR370F11S 362L Gris", "precio": 409.999, "imagen": 1},
-    {"id":23, "tipoId": 5, "nombre": "Heladera Sigma 2F1600PDa 329 Lts", "precio": 258.888, "imagen": 1},
-    {"id":24, "tipoId": 6, "nombre": "INGLÉS", "precio": 2, "imagen": 1},
-    {"id":25, "tipoId": 6, "nombre": "MATEMÁTICA", "precio": 2, "imagen": 1},
-    {"id":26, "tipoId": 6, "nombre": "FÍSICA", "precio": 2, "imagen": 1},
-    {"id":27, "tipoId": 6, "nombre": "MECATRÓNICA I", "precio": 2, "imagen": 1},
-    {"id":28, "tipoId": 6, "nombre": "HERRAMIENTAS INFORMÁTICAS", "precio": 2, "imagen": 1},
-    {"id":29, "tipoId": 6, "nombre": "GESTIÓN DE LA CALIDAD Y METROLOGÍA", "precio": 2, "imagen": 2},
-    {"id":30, "tipoId": 7, "nombre": "AUTOMACIÓN INDUSTRIAL", "precio": 2, "imagen": 2},
-    {"id":31, "tipoId": 7, "nombre": "MECÁNICA II", "precio": 2, "imagen": 2},
-    {"id":32, "tipoId": 7, "nombre": "ELECTROTECNIA II", "precio": 2, "imagen": 2},
-    {"id":33, "tipoId": 7, "nombre": "ELECTRÓNICA", "precio": 2, "imagen": 2},
-    {"id":34, "tipoId": 7, "nombre": "MANTENIMIENTO INDUSTRIAL", "precio": 2, "imagen": 2},
-    {"id":35, "tipoId": 8, "nombre": "MECÁNICA I", "precio": 2, "imagen": 2},
-    {"id":36, "tipoId": 8, "nombre": "MECATRÓNICA II", "precio": 2, "imagen": 2}
-]
-
+    {
+      "id": 1,
+      "tipoId": 1,
+      "nombre": "Notebook ASUS Vivobook 15 15,6 Intel Core i3 8GB 256GB SSD X1502ZA-EJ830W",
+      "precio": 659.999,
+      "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"
+    },
+    {
+      "id": 2,
+      "tipoId": 1,
+      "nombre": "Notebook HP 15.6” Ryzen 5 8GB 256GB SSD 15-ef2513la",
+      "precio": 919.999,
+      "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"
+    },
+    {
+      "id": 3,
+      "tipoId": 1,
+      "nombre": "Notebook Lenovo 14” Core i3 8GB 256GB SSD IdeaPad Slim 3 82XA001KAR",
+      "precio": 639.999,
+      "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"
+    },
+    {
+      "id": 4,
+      "tipoId": 1,
+      "nombre": "Notebook ASUS Vivobook 15 Core i7 8GB 512GB Win11 X1502ZA-EJ192W",
+      "precio": 1.519999,
+      "imagen": "https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png"
+    },
+    {
+      "id": 5,
+      "tipoId": 2,
+      "nombre": "Impresora Multifunción HP Smart Tank 520",
+      "precio": 248.9,
+      "imagen": "https://images.fravega.com/f300/55186970bdffda258a06a77aa35c7c1b.png"
+    },
+    {
+      "id": 6,
+      "tipoId": 2,
+      "nombre": "Impresora Multifunción Canon Pixma G2110",
+      "precio": 314.5,
+      "imagen": "https://images.fravega.com/f300/ebd9f9324274f155b2d096ea363669d9.jpg"
+    },
+    {
+      "id": 7,
+      "tipoId": 2,
+      "nombre": "Impresora Multifuncional HP DeskJet Ink Advantage 2375 (7WQ01A)",
+      "precio": 84.999,
+      "imagen": "https://images.fravega.com/f300/d47f1de026eeb3114b96c7a4e5766750.png"
+    },
+    {
+      "id": 8,
+      "tipoId": 2,
+      "nombre": "Impresora Multifunción Epson Monocromatica Ecotank M2120 ",
+      "precio": 787.5,
+      "imagen": "https://images.fravega.com/f300/bb2c3cc8269486538fa2840ed7be5232.jpg"
+    },
+    {
+      "id": 9,
+      "tipoId": 3,
+      "nombre": "Celular Samsung Galaxy A34 5G 128GB Lime",
+      "precio": 299.999,
+      "imagen": "https://images.fravega.com/f300/db44679678dd33b987212bc9e6fc2c99.jpg"
+    },
+    {
+      "id": 10,
+      "tipoId": 3,
+      "nombre": "Celular Motorola G23 128GB Azul",
+      "precio": 179.999,
+      "imagen": "https://images.fravega.com/f300/332a2d22382f714d26253b62446af895.png"
+    },
+    {
+      "id": 11,
+      "tipoId": 3,
+      "nombre": "Celular Motorola G13 4GB 128GB Rosa",
+      "precio": 149.5,
+      "imagen": "https://images.fravega.com/f300/4eed773a4b3c5f985eb5ca1c44c477e9.png"
+    },
+    {
+      "id": 12,
+      "tipoId": 3,
+      "nombre": "Celular Xiaomi Redmi Note 11 128GB Negro",
+      "precio": 162.399,
+      "imagen": "https://images.fravega.com/f300/9f8f8e501e260db6c994a891542fa349.jpg"
+    },
+    {
+      "id": 13,
+      "tipoId": 3,
+      "nombre": "Celular Xiaomi Redmi Note 11 128GB Azul",
+      "precio": 162.399,
+      "imagen": "https://images.fravega.com/f300/4c525119070000729d3fd4e98301c4a8.png"
+    },
+    {
+      "id": 14,
+      "tipoId": 4,
+      "nombre": "Ventilador de Pie Peabody PE-VP2061",
+      "precio": 47.99,
+      "imagen": 2
+    },
+    {
+      "id": 15,
+      "tipoId": 4,
+      "nombre": "Aire Acondicionado Split Frío/Calor Carrier XPower Inverter 3450W 2900F 53HVG1201E",
+      "precio": 799.5,
+      "imagen": 2
+    },
+    {
+      "id": 16,
+      "tipoId": 4,
+      "nombre": "Climatizador Portátil Philco 94CP1819N",
+      "precio": 99.999,
+      "imagen": 2
+    },
+    {
+      "id": 17,
+      "tipoId": 4,
+      "nombre": "Turbo Ventilador Liliana VTF16P 16",
+      "precio": 30.5,
+      "imagen": 2
+    },
+    {
+      "id": 18,
+      "tipoId": 4,
+      "nombre": "Aire Acondicionado Inverter Split Frío/Calor Hyundai HY10INV 3200W 2700F",
+      "precio": 719.999,
+      "año": 2
+    },
+    {
+      "id": 19,
+      "tipoId": 5,
+      "nombre": "Heladera Cíclica Drean 277Lts HDR280F00B Blanco",
+      "precio": 464.099,
+      "imagen": 2
+    },
+    {
+      "id": 20,
+      "tipoId": 5,
+      "nombre": "Freezer Gafa Inverter  FGHI200B-M 205L Blanco ",
+      "precio": 350.999,
+      "imagen": 2
+    },
+    {
+      "id": 21,
+      "tipoId": 5,
+      "nombre": "Heladera Cíclica Drean HDR400F00S 397 Lt Gris",
+      "precio": 599.9,
+      "imagen": 1
+    },
+    {
+      "id": 22,
+      "tipoId": 5,
+      "nombre": "Heladera Cíclica Drean HDR370F11S 362L Gris",
+      "precio": 409.999,
+      "imagen": 1
+    },
+    {
+      "id": 23,
+      "tipoId": 5,
+      "nombre": "Heladera Sigma 2F1600PDa 329 Lts",
+      "precio": 258.888,
+      "imagen": 1
+    },
+    {
+      "id": 24,
+      "tipoId": 6,
+      "nombre": "INGLÉS",
+      "precio": 2,
+      "imagen": 1
+    },
+    {
+      "id": 25,
+      "tipoId": 6,
+      "nombre": "MATEMÁTICA",
+      "precio": 2,
+      "imagen": 1
+    },
+    {
+      "id": 26,
+      "tipoId": 6,
+      "nombre": "FÍSICA",
+      "precio": 2,
+      "imagen": 1
+    },
+    {
+      "id": 27,
+      "tipoId": 6,
+      "nombre": "MECATRÓNICA I",
+      "precio": 2,
+      "imagen": 1
+    },
+    {
+      "id": 28,
+      "tipoId": 6,
+      "nombre": "HERRAMIENTAS INFORMÁTICAS",
+      "precio": 2,
+      "imagen": 1
+    },
+    {
+      "id": 29,
+      "tipoId": 6,
+      "nombre": "GESTIÓN DE LA CALIDAD Y METROLOGÍA",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 30,
+      "tipoId": 7,
+      "nombre": "AUTOMACIÓN INDUSTRIAL",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 31,
+      "tipoId": 7,
+      "nombre": "MECÁNICA II",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 32,
+      "tipoId": 7,
+      "nombre": "ELECTROTECNIA II",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 33,
+      "tipoId": 7,
+      "nombre": "ELECTRÓNICA",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 34,
+      "tipoId": 7,
+      "nombre": "MANTENIMIENTO INDUSTRIAL",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 35,
+      "tipoId": 8,
+      "nombre": "MECÁNICA I",
+      "precio": 2,
+      "imagen": 2
+    },
+    {
+      "id": 36,
+      "tipoId": 8,
+      "nombre": "MECATRÓNICA II",
+      "precio": 2,
+      "imagen": 2
+    }
+  ]
 }
-
