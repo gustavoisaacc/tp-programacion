@@ -1,7 +1,7 @@
 const tablaListar = document.querySelector(".tabla--informacion");
 const reguistro = document.querySelector(".reguistros");
 const table = document.querySelector('.tabla-informacion');
-const alumnosModal = document.querySelector('#mi-modal');
+const productoModal = document.querySelector('#mi-modal');
 const body = document.querySelector('.modal-body');
 const titleModal = document.querySelector('h5');
 
@@ -10,14 +10,14 @@ const titleModal = document.querySelector('h5');
 
 (async function  () {
 const select = document.createElement('select');
-const API = "http://localhost:3000/carreras";
+const API = "http://localhost:3000/categorias";
   const carreras = await axios.get(API)
 
   select.classList.add('carreras')
-  select.innerHTML = "<option>----Seleccione una carrera----</option>"
+  select.innerHTML = "<option>----Seleccione una Categoria----</option>"
   carreras.data.forEach(item => {
     select.innerHTML += `
-    <option value="${item.id}">${item.nombCarrera}</option>
+    <option value="${item.id}">${item.categoria}</option>
     `
     reguistro.appendChild(select)
   })
@@ -28,11 +28,11 @@ reguistro.addEventListener('change', async (e) => {
   if(e.target.className === "carreras"){
     const div = document.createElement('div')
     const sele = e.target;
-    const API = `http://localhost:3000/carreras/${sele.value}/materias`;
+    const API = `http://localhost:3000/categorias/${sele.value}/tipo`;
     const materias = await axios.get(API)
     materias.data.forEach(item => {
       div.innerHTML += `
-      <p data-set=${item.id} id="title" >${item.nombMateria}</p>
+      <p data-set=${item.id} id="title" >${item.subCategorias}</p>
     `
     table.appendChild(div)
   })
@@ -47,25 +47,32 @@ table.addEventListener('click',async (e) => {
     const target = e.target
     const id = target.dataset.set
     console.log(id)
-    const API = `http://localhost:3000/materias/${id}/alumnos`;
-    const alumnos = await axios.get(API)
-    console.log(alumnos.data)
-    alumnosModal.classList.toggle('modals')
-    const p = document.createElement('div')
+    const API = `http://localhost:3000/tipo/${id}/producto`;
+    const producto = await axios.get(API)
+    console.log(producto.data)
+    productoModal.classList.toggle('modals')
+    const div = document.createElement('div')
+    div.classList.add('card--css')
     titleModal.innerHTML = e.target.innerHTML
-    alumnos.data.forEach(item => {
-      p.innerHTML += `
-        <p>${item.nombre}</p>
+    producto.data.forEach(item => {
+      div.innerHTML += `
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${item.nombre} <span>$${item.precio}</span> </h5>
+          <a href="#" class="btn btn-primary">ver</a>
+        </div>
+      </div>
       `
-      body.appendChild(p)
+      body.appendChild(div)
      
     })
   }
 })
 
-alumnosModal.addEventListener('click', (e)=> {
+productoModal.addEventListener('click', (e)=> {
   if(e.target.className === "btn-close"){
-    alumnosModal.classList.add('modals')
+    productoModal.classList.add('modals')
   }
 })
 

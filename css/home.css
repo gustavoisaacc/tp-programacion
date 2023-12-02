@@ -59,3 +59,12 @@ input{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-right: 5px;
 }
+
+/* cAR */
+
+.card--css{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
